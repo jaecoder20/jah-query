@@ -1,10 +1,10 @@
 ﻿namespace JahCore.Attributes;
 
 [AttributeUsage(AttributeTargets.Class)]
-public class TableAttribute : System.Attribute
+public class JahTableAttribute : System.Attribute
 {
     private string _tableName;
-    public TableAttribute(string tableName)
+    public JahTableAttribute(string tableName)
     {
         if (string.IsNullOrWhiteSpace(tableName))
             throw new ArgumentException("Table name cannot be null or empty", nameof(tableName));
