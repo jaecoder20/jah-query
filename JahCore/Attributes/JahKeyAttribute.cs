@@ -7,6 +7,5 @@ public class JahKeyAttribute: System.Attribute
     public int Order { get; set; }
     public JahKeyAttribute()
     {
-        // Default constructor
     }
 }
